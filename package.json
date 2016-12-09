@@ -1,0 +1,21 @@
+{
+  "name": "reaction-main-street-theme",
+  "version": "1.0.0",
+  "description": "A theme for Reaction Commerce based on Bootstrap 4",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactioncommerce/reaction-main-street-theme.git"
+  },
+  "author": "Reaction Commerce",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/reactioncommerce/reaction-main-street-theme/issues"
+  },
+  "homepage": "https://github.com/reactioncommerce/reaction-main-street-theme#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5"
+  }
+}
