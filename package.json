@@ -17,5 +17,8 @@
   "homepage": "https://github.com/reactioncommerce/reaction-main-street-theme#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "node-sass": "^3.13.0"
   }
 }
