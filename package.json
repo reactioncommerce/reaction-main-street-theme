@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A theme for Reaction Commerce based on Bootstrap 4",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sass-lint -v -q"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
     "bootstrap": "^4.0.0-alpha.5"
   },
   "devDependencies": {
-    "node-sass": "^3.13.0"
-  }
+    "node-sass": "^3.13.0",
+    "sass-lint": "^1.10.2"
+  },
+  "sasslintConfig": ".sass-lint.yml"
 }
