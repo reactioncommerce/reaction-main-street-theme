@@ -99,13 +99,14 @@ $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
+$brand-primary:             #5FDD83 !default;
+$brand-success:             #1C98D5 !default;
+$brand-info:                $gray-light !default;
 $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 $brand-inverse:             $gray-dark !default;
 
+$white:                     #fff !default;
 
 // 2. Options
 //
@@ -922,3 +923,17 @@ $pre-bg:                      $gray-lightest !default;
 $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
+
+// == Buttons
+$btn-edit-color: $body-color;
+$btn-edit-bg: $gray-light;
+$btn-active-color: #fff;
+$btn-active-bg: $brand-primary;
+$btn-icon-size: 24px;
+
+// == Badge
+$badge-offset: $btn-icon-size / 2;
+$badge-offset-top: -$badge-offset / 2;
+$badge-offset-right: -$badge-offset / 2;
+$badge-offset-bottom: $badge-offset / 2;
+$badge-offset-left: $badge-offset / 2;
