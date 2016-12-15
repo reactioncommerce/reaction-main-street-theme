@@ -1,0 +1,62 @@
+
+.variant-detail {
+  display: flex;
+  position: relative;
+  padding: 10px 20px;
+  border: $list-group-border-width solid $list-group-border-color;
+  border-radius: $list-group-border-radius;
+  background-color: $list-group-bg;
+  font-size: 16x;
+}
+
+.variant-detail > .title {
+  flex: 1 1 auto;
+}
+
+.variant-detail > .actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.variant-detail .variant-price {
+  font-size: 20px;
+}
+
+.variant-detail:hover,
+.variant-detail-selected {
+  border: 1px solid $brand-primary;
+  box-shadow: 0 0 0 1px $brand-primary;
+}
+
+.variant-detail .alerts {
+  @include right(-10px);
+
+  display: flex;
+  position: absolute;
+  top: -10px;
+}
+
+.variant-detail .badge {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+
+.variant-detail .alerts button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  margin-left: 5px;
+  padding: 0;
+  border: none;
+  border-radius: 50px;
+  background-color: $gray-light;
+  font-size: 10px;
+}
+
+.variant-deleted {
+  opacity: 0.8;
+}
