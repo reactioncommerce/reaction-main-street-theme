@@ -33,62 +33,65 @@
   background-color: transparent;
   color: $white;
 }
-//
-// .rui.navbar .menu {
-//   flex: 1 1 auto;
-//   margin: 0 10px;
-// }
-//
-// .rui.navbar .rui.tagnav {
-//   background: transparent;
-// }
-//
-// .rui.navbar .rui.tagnav .edit-tag-button {
-//   border: none;
-//   background-color: transparent;
-//   color: $link-color;
-// }
-//
-// .rui.navbar .rui.tagnav.vertical {
-//   background: $white;
-// }
-//
-// .rui.navbar .rui.tagnav.vertical .rui.tag.link {
-//   color: $link-color;
-// }
-//
-// .rui.navbar .cart {
-//   flex: 0 0 auto;
-//   position: relative;
-//   cursor: pointer;
-// }
-//
-// .rui.navbar .dropdown a {
-//   color: $link-color;
-// }
-//
-// .rui.navbar .dropdown .dropdown-menu > .active > a{
-//   color: $white;
-// }
-//
-// .rui.navbar .dropdown {
-//   height: 100%;
-// }
-//
-// .rui.navbar .dropdown-toggle {
-//   display: flex;
-//   align-items: center;
-//   height: 100%;
-//
-//   padding: 0 @navbar-padding-vertical;
-//   @include padding-left($navbar-padding-vertical);
-// }
-//
+
+.rui.navbar .menu {
+  flex: 1 1 auto;
+  margin: 0 10px;
+}
+
+.rui.navbar .rui.tagnav {
+  background: transparent;
+}
+
+.rui.navbar .rui.tagnav .edit-tag-button {
+  border: none;
+  background-color: transparent;
+  color: $link-color;
+}
+
+.rui.navbar .rui.tagnav.vertical {
+  background: $white;
+}
+
+.rui.navbar .rui.tagnav.vertical .rui.tag.link {
+  color: $link-color;
+}
+
+.rui.navbar .cart {
+  position: relative;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.rui.navbar .dropdown a {
+  color: $dropdown-link-color;
+}
+
+.rui.navbar .dropdown .dropdown-menu > .active > a {
+  background-color: $dropdown-link-active-bg;
+  color: $dropdown-link-active-color;
+}
+
+.rui.navbar .dropdown {
+  height: 100%;
+}
+
+.rui.navbar .dropdown-toggle {
+  @include padding-left($navbar-padding-x);
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 $navbar-padding-x;
+}
+
+// TODO: revisit
 // .rui.navbar .languages {
 //   display: flex;
-//   align-items: center;
 //   flex: 0 0 auto;
-//   height: $navbar-height;
+//   align-items: center;
+//   // TODO: Navbar height??
+//   // height: $navbar-height;
 // }
 //
 // .rui.navbar .languages:hover {
@@ -232,3 +235,22 @@
 // .rui.navbar .search:hover button {
 //   outline: none;
 // }
+
+
+
+.rui.menu .divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rui.menu-item .font-icon {
+  @include margin-right(10px);
+}
+
+.rui.menu-item.disabled {
+  // color: @black30;
+}
+
+.rui.menu-item.disabled:hover {
+  background-color: transparent;
+}

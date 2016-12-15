@@ -1,0 +1,345 @@
+
+.rui.tagnav .rui.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rui.tagnav .rui.tag {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: $border-radius;
+  background-color: transparent;
+}
+
+.rui.tagnav .rui.tag.edit {
+  padding: ($navbar-padding-y / 2) 0;
+}
+
+.rui.tagnav .rui.tag.edit button:last-child {
+  min-width: 36px;
+}
+
+.rui.tagnav .rui.tag.edit form {
+  display: flex;
+}
+
+.rui.tagnav .rui.tag.edit input {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.rui.tagnav .rui.tag.edit button {
+  padding: 2px 5px;
+}
+
+.rui.tagnav .rui.tag.edit button:first-child {
+  border-radius: $border-radius 0 0 $border-radius;
+}
+
+.rui.tagnav .rui.tag.edit button:last-child {
+  border-radius: 0 $border-radius $border-radius 0;
+}
+
+// TODO: Revisit
+// .rui.tagnav .rui.tag.edit.create {
+//   @color: lighten(@btn-success-bg, 10%);
+//   @color: @brand-secondary-color;
+//   // @color: #238CC3;
+//   // @color: @white;
+//
+//   input {
+//     background-color: #fff;
+//     color: $text-color;
+//     // .placeholder(@color);
+//   }
+//
+//   button {
+//     background-color: @white;
+//     color: @color;
+//   }
+// }
+
+.rui.tagnav .rui.tag.edit.create input {
+  // .placeholder($brand-secondary-color);
+}
+
+// Base Tag Navigation
+// -- Horizontal Layout
+.rui.tagnav {
+  display: flex;
+  position: relative;
+  flex: 1 1 auto;
+  align-items: center;
+  height: $navbar-height;
+  // background-color: @navbar-inverse-bg;
+  text-transform: uppercase;
+}
+
+// -- Vertical Layout
+.rui.tagnav.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.rui.tagnav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: $zindex-navbar;
+}
+
+.rui.tagnav.fixed.open {
+  display: flex;
+}
+
+.rui.tagnav.fixed.closed {
+  display: none;
+}
+
+// Tag navigation tag list
+// -- Horizontal Layout
+.rui.tagnav > .rui.tags {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  overflow-x: auto;
+}
+
+// -- Vertical Layout
+.rui.tagnav.vertical > .rui.tags {
+  display: block;
+}
+
+// Tag navigation, edit tags button
+// -- Horizontal Layout
+.rui.tagnav .edit-tag-button {
+  flex: 0 0 auto;
+  height: 100%;
+  border: 0;
+  border-left: 1px solid $list-group-border-color;
+  border-radius: 0;
+  background-color: $list-group-bg;
+}
+
+// -- Vertical Layout
+.rui.tagnav.vertical .edit-tag-button {
+  height: auto;
+}
+
+.rui.tagnav .navbar-header {
+  display: none;
+
+  @media screen and (max-width: map-get($container-max-widths, sm)) {
+    display: flex;
+  }
+}
+
+.rui.tagnav.vertical .navbar-header {
+  flex: 0 0 auto;
+  width: 100%;
+  // height: $navbar-height;
+  border-bottom: 1px solid $list-group-border-color;
+}
+
+.rui.tagnav.vertical .navbar-header .close-button {
+  width: 44px;
+  border: none;
+  border-radius: 0;
+}
+
+// Groupd navbar items (includes a link and dropdown)
+// -- Horizontal
+.rui.tagnav .navbar-items {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow-y: visible;
+}
+
+// -- Vertical
+.rui.tagnav.vertical .navbar-items {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+// Single navbar item
+// -- Horizontal Layout
+.rui.tagnav .navbar-items > .navbar-item {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+// -- Vertical Layout
+.rui.tagnav.vertical .navbar-items > .navbar-item {
+  display: block;
+}
+
+.rui.tagnav .navbar-footer {
+  height: 100%;
+}
+
+.rui.tagnav.vertical .navbar-footer {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  // height: @navbar-height;
+  border-top: $dropdown-border-width solid $dropdown-border-color;
+}
+
+.rui.tagnav .edit-tag-button.btn-success {
+  flex: 0 0 auto;
+  height: 100%;
+  border: 0;
+  border-left: 1px solid $btn-success-border;
+  border-radius: 0;
+  background-color: $btn-success-bg;
+  color: $btn-success-color;
+}
+
+.rui.tagnav.vertical .navbar-item.has-dropdown > .rui.tag.link {
+  position: relative;
+}
+
+.rui.tagnav.vertical .navbar-item.has-dropdown > .rui.tag.link:after {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  align-items: center;
+  height: 100%;
+  font-family: "FontAwesome", "FontAwesomeFallback";
+  font-size: 16px;
+  content: $icon-angle-down;
+}
+
+.rui.tagnav .navbar-item > .rui.tag.link {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  padding: 0 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.rui.tagnav .navbar-item:hover > .rui.tag.link {
+  // background-color: @black10;
+  color: $link-color;
+}
+
+.rui.tagnav.vertical .navbar-item > .rui.tag.link {
+  display: block;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.rui.tagnav .navbar-item > .rui.item.edit {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  width: auto;
+  min-width: 150px;
+  max-width: 150px;
+  height: 100%;
+  padding: 0 5px;
+}
+
+.rui.tagnav .navbar-item > .rui.tag.edit form {
+  height: 26px;
+}
+
+.rui.tagnav.vertical .navbar-item > .rui.item.edit {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 20px;
+}
+
+.rui.tagnav .rui.tag.edit.selected button,
+.rui.tagnav .rui.tag.edit.selected input {
+  border-color: $btn-info-border;
+  background-color: $btn-info-bg;
+  color: $btn-info-color;
+}
+
+.rui.tagnav .rui.tag.edit.selected button:last-child {
+  color: $btn-success-color;
+}
+
+.rui.tagnav .navbar-item {
+  height: 100%;
+}
+
+.rui.tagnav.vertical .navbar-item {
+  height: auto;
+}
+
+.rui.tagnav .navbar-item .dropdown-container {
+  display: none;
+  // color: $text-color;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+.rui.tagnav .navbar-item .dropdown-container a {
+  color: $link-color;
+}
+//
+// .rui.tagnav .navbar-item .dropdown-container .rui.tag,
+// .rui.tagnav .rui.tag.edit input {
+//   color: @text-color;
+// }
+//
+.rui.tagnav .navbar-item.selected > .rui.tag {
+  border-radius: 0;
+  background-color: $gray-light;
+}
+
+.rui.tagnav .navbar .navbar-item:hover .dropdown-container,
+.rui.tagnav .navbar .navbar-item:focus .dropdown-container,
+.rui.tagnav .navbar-item.selected .dropdown-container {
+  display: block;
+  position: absolute;
+  top: $navbar-height;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  border-bottom: $dropdown-border-width solid $dropdown-border-color;
+  // background-color: @white;
+  z-index: $zindex-navbar;
+}
+
+.rui.tagnav.vertical .navbar-item.selected .dropdown-container,
+.rui.tagnav.vertical .navbar-item .dropdown-container {
+  position: static;
+}
+
+.nav-dropbar-content {
+  flex: 1 1 auto;
+  min-height: 200px;
+  padding: 10px;
+}
+
+.nav-dropbar-footer {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 10px;
+  border-top: $dropdown-border-width solid $dropdown-border-color;
+}
+
+.nav-dropbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
