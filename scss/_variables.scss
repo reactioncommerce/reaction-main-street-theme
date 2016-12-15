@@ -980,3 +980,10 @@ $toolbar-light-active-color:         rgba(0,0,0,.9) !default;
 $toolbar-light-disabled-color:       rgba(0,0,0,.3) !default;
 $toolbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$toolbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
 $toolbar-light-toggler-border:       rgba(0,0,0,.1) !default;
+
+
+// R110. Product Detail
+$product-title-font-size: floor(($font-size-base * 3.6)); // ~36px
+$product-page-title-font-size: floor(($font-size-base * 2.35)); // ~30px
+$product-price-font-size: 42px;
+$product-description-font-size: 16px;

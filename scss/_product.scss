@@ -1,0 +1,238 @@
+.pdp-container {
+  max-width: 1440px;
+}
+
+.pdp-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pdp .img-responsive {
+  width: 100%;
+}
+
+// TODO: Remove??
+// .pdp input {
+//   border: 1px solid @border-color;
+// }
+//
+// Header
+.pdp.header {
+  text-align: center;
+}
+
+.pdp.header h1,
+.pdp.header .title-edit-input  {
+  color: $headings-color;
+  font-family: $font-family-base;
+  font-size: $font-size-h1;
+  font-weight: $headings-font-weight;
+  text-align: center;
+}
+
+.pdp.header h2,
+.pdp.header .pageTitle-edit-input  {
+  color: $headings-color;
+  font-family: $font-family-base;
+  font-size: $font-size-h2;
+  font-weight: $headings-font-weight;
+  text-align: center;
+}
+
+// Product edit fields
+.pdp.product-detail-edit {
+  position: relative;
+}
+
+.pdp.product-detail-edit .edit-controls {
+  position: absolute;
+  top: -$btn-icon-size / 2;
+  right: -$btn-icon-size / 2;
+}
+// @include media-breakpoint-down(xs) {
+//   .pdp.header h1 {
+//     font-size: 30px;
+//   }
+//
+//   .pdp.header h2 {
+//     font-size: 20px;
+//   }
+// }
+
+.pdp.header .pageTitle {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.pdp.header input {
+  width: 100%;
+  text-align: center;
+}
+
+// Content
+// Columns
+.pdp.column {
+  padding: 10px
+}
+
+.pdp-content .pdp.column.left {
+  width: 45%;
+}
+
+.pdp-content .pdp.column.right {
+  width: 55%;
+}
+
+@include media-breakpoint-down(xs) {
+  .pdp-content .pdp.column.left {
+    width: 100%;
+  }
+
+  .pdp-content .pdp.column.right {
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .page.show-settings .pdp.column.left {
+    width: 100%;
+  }
+
+  .page.show-settings .pdp-content .pdp.column.right {
+    width: 100%;
+  }
+}
+
+.pdp .rui.social-buttons {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+// Right Column
+.pdp.right .pricing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pdp.right .pricing .left {
+  flex: 1 1 auto;
+}
+
+.pdp.right .pricing .right {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.pdp.price-range {
+  display: inline-block;
+  font-size: $product-price-font-size;
+  font-weight: bold;
+  overflow: visible;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 24px;
+  }
+}
+
+.pdp .currency-symbol {
+  @include margin-right(-10px);
+
+  font-size: $product-price-font-size;
+  font-weight: bold;
+}
+
+.pdp.right textarea {
+  width: 100%;
+  padding: 15px;
+  // border: 1px solid @border-color;
+  // border-radius: @input-border-focus;
+  overflow: auto;
+
+  textarea.vert { resize:vertical; }
+}
+
+.pdp .vendor {
+  margin-bottom: 10px;
+}
+
+.pdp .vendor input {
+  width: 100%;
+}
+
+.pdp .tags-header.edit,
+.pdp .meta-header.edit {
+  display: flex;
+  align-items: center;
+}
+
+// Social
+.pdp .social-media {
+  position: relative;
+}
+
+.social-input {
+  margin-bottom: 10px;
+}
+
+.pdp .social-media a {
+  padding: 2px;
+}
+
+// Tags
+.pdp-container .rui.tag.edit {
+  width: 100%;
+}
+
+.pdp-container .rui.tags > .rui.item {
+  width: 50%;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.pdp-container .rui.tags > .rui.item .fa-bookmark {
+  color: $btn-success-bg;
+}
+
+.pdp-container .rui.tags > .rui.item input {
+  width: 100%;
+}
+
+// Add to cart button
+.pdp.add-to-cart {
+  display: flex;
+  width: 100%;
+  height: 44px;
+}
+
+.pdp.add-to-cart input {
+  flex: 0 0 auto;
+  min-width: 30px;
+  max-width: 50px;
+  height: 100%;
+  border: 1px solid lighten($btn-success-border, 10%);
+  border-radius: $border-radius 0 0 $border-radius;
+  background-color: lighten($btn-success-bg, 10%);
+  color: $btn-success-color;
+  text-align: center;
+}
+
+.rtl .pdp.add-to-cart input {
+  border-radius: 0 $border-radius $border-radius 0;
+}
+
+.pdp.add-to-cart button {
+  flex: 1 1 auto;
+  border: 1px solid $btn-success-border;
+  border-radius: 0 $border-radius $border-radius 0;
+  background-color: $btn-success-bg;
+  color: $btn-success-color;
+  font-size: 16px;
+}
+
+.rtl .pdp.add-to-cart button {
+  border-radius: $border-radius 0 0 $border-radius;
+}
