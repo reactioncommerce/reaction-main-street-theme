@@ -944,4 +944,39 @@ $badge-offset-right: -$badge-offset / 2;
 $badge-offset-bottom: $badge-offset / 2;
 $badge-offset-left: $badge-offset / 2;
 
-$icon-angle-down: "\f107"
+$icon-angle-down: "\f107";
+
+// Reaction Specific
+$toolbar-vertical-width: 60px;
+
+
+// R100. Toolbar
+
+$toolbar-border-radius:              0;
+$toolbar-padding-x:                  $spacer !default;
+$toolbar-padding-y:                  ($spacer / 2) !default;
+$toolbar-vertical-padding-x:         $spacer !default;
+$toolbar-vertical-padding-y:         ($spacer / 2) !default;
+
+$toolbar-brand-padding-y:            .25rem !default;
+
+$toolbar-divider-padding-y:          .425rem !default;
+
+$toolbar-toggler-padding-x:           .75rem !default;
+$toolbar-toggler-padding-y:           .5rem !default;
+$toolbar-toggler-font-size:           $font-size-lg !default;
+$toolbar-toggler-border-radius:       $btn-border-radius !default;
+
+$toolbar-dark-color:                 rgba(255,255,255,.5) !default;
+$toolbar-dark-hover-color:           rgba(255,255,255,.75) !default;
+$toolbar-dark-active-color:          rgba(255,255,255,1) !default;
+$toolbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
+$toolbar-dark-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$toolbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$toolbar-dark-toggler-border:        rgba(255,255,255,.1) !default;
+
+$toolbar-light-color:                rgba(0,0,0,.5) !default;
+$toolbar-light-hover-color:          rgba(0,0,0,.7) !default;
+$toolbar-light-active-color:         rgba(0,0,0,.9) !default;
+$toolbar-light-disabled-color:       rgba(0,0,0,.3) !default;
+$toolbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$toolbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$toolbar-light-toggler-border:       rgba(0,0,0,.1) !default;
