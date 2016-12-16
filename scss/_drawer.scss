@@ -1,0 +1,46 @@
+.admin-controls {
+  display: flex;
+  flex: 0 0 auto;
+  width: 0;
+  height: 100%;
+  transition: width 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border-left: $dropdown-border-width solid $dropdown-border-color;
+  background-color: $dropdown-bg;
+  box-shadow: 0 0 40px rgba(0,0,0,.1);
+  overflow: hidden;
+  z-index: 100;
+
+  @include media-breakpoint-down(xs) {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: top 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    box-shadow: none;
+    z-index: $zindex-modal;
+  }
+}
+
+.admin-controls .nav-dashboard {
+  @include padding-left(0);
+  @include padding-right(0);
+}
+
+.admin-controls.show-settings {
+  width: 400px;
+  border-right: $dropdown-border-width solid $dropdown-border-color;
+
+  @include media-breakpoint-down(sm) {
+    border: none;
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+  }
+
+  @include media-breakpoint-down(xs) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
