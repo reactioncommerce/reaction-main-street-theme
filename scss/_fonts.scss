@@ -1,28 +1,16 @@
 // Text Font
 // Source Sans from Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
 
 // Font Awesome
-@import "../node_modules/font-awesome/scss/_variables.scss";
-@import "../node_modules/font-awesome/scss/_mixins.scss";
-@import "../node_modules/font-awesome/scss/_core.scss";
-@import "../node_modules/font-awesome/scss/_larger.scss";
-@import "../node_modules/font-awesome/scss/_fixed-width.scss";
-@import "../node_modules/font-awesome/scss/_list.scss";
-@import "../node_modules/font-awesome/scss/_bordered-pulled.scss";
-@import "../node_modules/font-awesome/scss/_animated.scss";
-@import "../node_modules/font-awesome/scss/_rotated-flipped.scss";
-@import "../node_modules/font-awesome/scss/_stacked.scss";
-@import "../node_modules/font-awesome/scss/_icons.scss";
-@import "../node_modules/font-awesome/scss/_screen-reader.scss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 @font-face {
   font-family: "FontAwesome";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.eot");
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
 }
 
 // @font-face {
