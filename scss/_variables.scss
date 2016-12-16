@@ -925,29 +925,11 @@ $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
 
 // ------------------------------------------
-// legacy
+// Reaction Variables
+
+// R000. Legacy
 
 $navbar-height: 55px;
-
-
-// == Buttons
-$btn-edit-color: $body-color;
-$btn-edit-bg: $gray-light;
-$btn-active-color: #fff;
-$btn-active-bg: $brand-primary;
-$btn-icon-size: 24px;
-
-// == Badge
-$badge-offset: $btn-icon-size / 2;
-$badge-offset-top: -$badge-offset / 2;
-$badge-offset-right: -$badge-offset / 2;
-$badge-offset-bottom: $badge-offset / 2;
-$badge-offset-left: $badge-offset / 2;
-
-$icon-angle-down: "\f107";
-
-// Reaction Specific
-$toolbar-vertical-width: 60px;
 
 
 // R100. Toolbar
@@ -981,20 +963,31 @@ $toolbar-light-disabled-color:       rgba(0,0,0,.3) !default;
 $toolbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$toolbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
 $toolbar-light-toggler-border:       rgba(0,0,0,.1) !default;
 
+$toolbar-vertical-width: 60px;
+
 
 // R110. Product Detail
+
 $product-title-font-size: floor(($font-size-base * 3.6)); // ~36px
 $product-page-title-font-size: floor(($font-size-base * 2.35)); // ~30px
 $product-price-font-size: 42px;
 $product-description-font-size: 16px;
 
+
 // R120. Buttons
+
 $btn-light-bg: $gray-dark;
 $btn-light-color: $gray-dark;
 $btn-light-border-color: $gray-dark;
 
+$btn-edit-color: $body-color;
+$btn-edit-bg: $gray-light;
+$btn-active-color: #fff;
+$btn-active-bg: $brand-primary;
+$btn-icon-size: 24px;
 
 // R130. Cart
+
 $cart-drawer-bg: #fff;
 $cart-drawer-height: 275px;
 $cart-icon-bg: #25b315;
@@ -1016,3 +1009,14 @@ $checkout-progress-active: $brand-primary;
 $checkout-progress-active-text: #fff;
 $checkout-progress-next: $brand-info;
 $checkout-progress-next-text: $gray-dark;
+
+
+// R190. Badge
+
+$badge-offset: $btn-icon-size / 2;
+$badge-offset-top: -$badge-offset / 2;
+$badge-offset-right: -$badge-offset / 2;
+$badge-offset-bottom: $badge-offset / 2;
+$badge-offset-left: $badge-offset / 2;
+
+$icon-angle-down: "\f107";
