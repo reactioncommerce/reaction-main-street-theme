@@ -1,15 +1,6 @@
 /* RTL mixins
 -------------------------------------------------- */
 
-// @mixin rtl-style($prop, $value, $inverse-prop, $default-value) {
-//   #{$prop}: $value;
-//
-//   html[dir=rtl] & {
-//     #{$inverse-prop}: $value;
-//     #{$prop}: $default-value;
-//   }
-// }
-
 @mixin rtl($property, $value) {
   html.rtl & {
     #{$property}: $value
@@ -51,44 +42,38 @@
   @include rtl(padding-left, $n);
 }
 
-// @mixin float($n) when ($n = left) {
-//   .ltr({ float: left; });
-//   .rtl({ float: right; });
-// }
-//
-// @mixin float($n) when ($n = right) {
-//   .ltr({ float: right; });
-//   .rtl({ float: left; });
-// }
-//
-// @mixin float($n) when not ($n = left) and not ($n = right) {
-//   float: $n;
-// }
-//
-// @mixin clear($n) when ($n = left) {
-//   .ltr({ clear: left; });
-//   .rtl({ clear: right; });
-// }
-//
-// @mixin clear($n) when ($n = right) {
-//   .ltr({ clear: right; });
-//   .rtl({ clear: left; });
-// }
-//
-// @mixin clear($n) when not ($n = left) and not ($n = right) {
-//   clear: $n;
-// }
-//
-// @mixin text-align($n) when ($n = left) {
-//   .ltr({ text-align: left; });
-//   .rtl({ text-align: right; });
-// }
-//
-// @mixin text-align($n) when ($n = right) {
-//   .ltr({ text-align: right; });
-//   .rtl({ text-align: left; });
-// }
-//
-// @mixin text-align($n) when not ($n = left) and not ($n = right) {
-//   text-align: $n;
-// }
+@mixin float($n) {
+  @if ($n == left) {
+    @include ltr(float, left);
+    @include rtl(float, right);
+  } @else if ($n == right) {
+    @include ltr(float, right);
+    @include rtl(float, left);
+  } @else {
+    float: $n;
+  }
+}
+
+@mixin clear($n) {
+  @if ($n == left) {
+    @include ltr(clear, left);
+    @include rtl(clear, right);
+  } @else if ($n == right) {
+    @include ltr(clear, right);
+    @include rtl(clear, left);
+  } @else {
+    clear: $n;
+  }
+}
+
+@mixin text-align($n) {
+  @if ($n == left) {
+    @include ltr(text-align, left);
+    @include rtl(text-align, right);
+  } @else if ($n == right) {
+    @include ltr(text-align, right);
+    @include rtl(text-align, left);
+  } @else {
+    text-align: $n;
+  }
+}
