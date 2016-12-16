@@ -1,9 +1,10 @@
 // Bootstrap base
+@import "_variables";
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Reaction Custom
 // All variables from bootstrap
-@import "_variables";
 @import "mixins/_rtl";
 @import "_fonts";
 

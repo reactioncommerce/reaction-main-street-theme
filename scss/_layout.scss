@@ -30,6 +30,99 @@ main {
   height: 100%;
 }
 
+
+body.admin {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+  }
+}
+
+.page {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page main.main {
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.page.show-settings {
+  min-width: 0;
+}
+
+body.admin-horizontal-reverse {
+  flex-direction: row-reverse;
+}
+
+body.admin-vertical {
+  flex-direction: column;
+}
+
+body.admin-vertical-reverse {
+  flex-direction: column;
+}
+
+body.admin-vertical .page {
+  height: 80vh;
+}
+
+
+
+.tools {
+  top: 0;
+  right: 0;
+  flex: 1 1 auto;
+  min-width: 400px;
+  max-width: 400px;
+  height: 100vh;
+  padding: 20px;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container-fluid-sm {
+  padding: 20px;
+}
+
+.container-fluid-md {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.container-lg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.container-sm {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+
 // Simple item layout using flexbox
 .rui.items {
   width: 100%;
