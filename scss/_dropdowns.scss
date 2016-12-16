@@ -1,0 +1,33 @@
+.navbar-shop {
+  .dropdown {
+    height: 100%;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 $navbar-padding-x * 2;
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.dropdown-menu {
+  min-width: 200px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.dropdown-menu > a {
+  display: block;
+  padding: 3px 20px;
+}
+
+.rui.dropdown-menu {
+  display: block;
+  position: static;
+  float: none;
+}
