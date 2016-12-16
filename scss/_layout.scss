@@ -10,8 +10,8 @@ main {
 }
 
 .container-main {
-  padding: 20px 60px 20px 60px;
-  box-sizing: content-box;
+  padding: 60px 0;
+  // box-sizing: content-box;
 
   @include media-breakpoint-down(sm) {
     padding: 20px;

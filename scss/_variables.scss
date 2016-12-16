@@ -99,8 +99,8 @@ $gray-light:                #636c72;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
-$brand-primary:             #5fdd83;
-$brand-success:             #1c98d5;
+$brand-primary:             #1c98d5;
+$brand-success:             #5fdd83;
 $brand-info:                #c0c0c0;
 $brand-warning:             #ffd869;
 $brand-danger:              #e75153;
@@ -927,14 +927,18 @@ $pre-scrollable-max-height:   340px;
 // ------------------------------------------
 // Reaction Variables
 
-// R000. Legacy
+// R000. Navbar
 
-$navbar-height: 55px;
-
+$navbar-bg:                          #fff;
+$navbar-height:                      55px;
 
 // R100. Toolbar
 
+$toolbar-bg:                         #fff;
+$toolbar-border-width:               1px;
+$toolbar-border-color:               $gray-lighter;
 $toolbar-border-radius:              0;
+
 $toolbar-padding-x:                  $spacer;
 $toolbar-padding-y:                  ($spacer / 2);
 $toolbar-vertical-padding-x:         $spacer;

@@ -4,6 +4,8 @@
   position: relative;
   align-items: center;
   padding: $navbar-padding-y $navbar-padding-x;
+  background-color: $toolbar-bg;
+  border-bottom: $toolbar-border-width solid $toolbar-border-color;
 
   @include media-breakpoint-up(sm) {
     @include border-radius($toolbar-border-radius);
@@ -14,6 +16,8 @@
   flex: 0 0 auto;
   flex-direction: column;
   width: $toolbar-vertical-width;
+  border-bottom: none;
+  border-right: $toolbar-border-width solid $toolbar-border-color;
   z-index: $zindex-navbar;
 }
 
