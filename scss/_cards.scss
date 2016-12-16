@@ -1,0 +1,332 @@
+
+// LEFACY BS3 Panels and admin panels
+// Panel > Card conversion
+
+// sass-lint:disable-all
+.panel { @extend .card; }
+.panel-header { @extend .card-header; }
+.panel-body { @extend .card-block; }
+.panel-title { @extend .card-title; }
+.panel-footer { @extend .card-footer; }
+// sass-lint:enable»-all
+
+.panelGarden--2x {
+  > .panel {
+    flex: 1 1 50%;
+    max-width: 50%;
+    marign: 2%;
+  }
+}
+
+.panel > .panel {
+  border: none;
+
+  .panel-heading {
+    border-bottom: $card-border-width solid $card-border-color;
+  }
+}
+
+.flex-item > .panel {
+  height: 100%;
+  min-height: 220px;
+  margin-bottom: 0;
+}
+
+.panel, .panel-default {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+  border: $card-border-width;
+  background-color: $card-border-color;
+  box-shadow: none;
+}
+
+label.panel-title {
+  font-weight: normal;
+}
+
+.panel-active > .panel-heading {
+  background-color: $brand-primary;
+}
+
+.action-view-body .panel-group {
+  margin-bottom: 0;
+}
+
+.action-view-body > .panel,
+.action-view-body > .panel-group > .panel,
+.action-view-body > .panel-group > .panel > .panel-group > .panel,
+.action-view-body > form > .panel,
+.action-view-body > form > .panel-group > .panel {
+  margin-bottom: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+
+.panel-group-accordian a.panel-heading.collapsed {
+  background: $card-bg;
+}
+
+.panel-group-accordian a.panel-heading,
+.panel-group-accordian a.panel-heading:hover,
+.panel-group-accordian a.panel-heading:active {
+  background: $gray-lightest;
+  text-decoration: none;
+}
+
+.panel-group-accordian .panel-active a.panel-heading {
+  background-color: $brand-primary;
+}
+
+.panel-heading-flex {
+  display: flex;
+  align-items: center;
+}
+
+.panel-heading-flex > .panel-title {
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.panel-heading-flex > .media {
+  margin-right: 10px;
+}
+
+.panel-heading-flex > .panel-controls {
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.panel-heading-flex > .panel-controls > .form-group {
+  margin-bottom: 0;
+}
+
+.panel-default > .panel-heading {
+  padding: 15px 20px;
+  background-color: $card-cap-bg;
+}
+
+.panel-md > .panel-heading {
+  padding: 40px 20px;
+  border-bottom: $card-border-width solid $card-border-color;
+}
+
+.panel-lg > .panel-heading {
+  padding: 40px 20px;
+  border-bottom: $card-border-width solid $card-border-color;
+}
+
+.panel-title-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.panel-control-bar,
+.panel-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: $card-border-width solid $card-border-color;
+}
+
+.panel-control-bar .panel-title {}
+.panel-control-bar .panel-controls,
+.panel-toolbar .panel-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.panel-header--brand {
+  padding: 10px 20px;
+  background-color: darken($brand-primary, 10%);
+  color: #fff;
+}
+
+.panel-content,
+.flex-item > .panel .panel-body {
+  flex: 1 1 auto;
+  padding: 10px 20px;
+}
+
+.flex-item > .panel .list-group {
+  flex: 1 1 auto;
+}
+
+.panel-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+  .left, .right {
+    display: flex;
+    flex: 1 1 50%;
+    align-items: center;
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+}
+
+.panel-footer-item {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.panel-group {
+  margin-bottom: 20px;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+  border-top: $card-border-width solid $card-border-color;
+  border-radius: 0;
+}
+
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+
+// --------------------------------
+// Cards
+.rui.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rui.card-grid > .rui.card {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 25%;
+  min-width: 300px;
+  max-width: 25%;
+  padding: 10px;
+
+  @include media-breakpoint-up(lg) {
+    width: 33%;
+    max-width: 33%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 33%;
+    min-width: 250px;
+    max-width: 33%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 33%;
+    min-width: 0;
+    max-width: 33%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+.page.show-settings .rui.card-grid > .rui.card {
+  width: 33%;
+  max-width: 33%;
+
+  @include media-breakpoint-up(ls) {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    min-width: 250px;
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+.rui.card {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.rui.card.active {
+  border: 1px solid $brand-primary;
+  box-shadow: 0 0 0 3px $brand-primary;
+}
+
+.rui.card .content {
+  flex: 1 1 auto;
+  padding: 10px;
+  cursor: default;
+}
+
+.rui.card .content .title {
+  margin-top: 0;
+}
+
+.rui.card .controls {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: 44px;
+  min-width: 44px;
+  max-width: 44px;
+  border-left: $card-border-width solid $card-border-color;
+}
+
+.rui.card .controls button {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: $card-border-width solid $card-border-color;
+  background-color: transparent;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: $gray-lightest;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 16px;
+  }
+}
