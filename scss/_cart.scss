@@ -1,0 +1,74 @@
+.cart-icon {
+  @include margin-left(2px);
+
+  position: relative;
+  height: $navbar-height;
+  padding: $cart-icon-padding;
+  border: $cart-icon-border;
+  border-radius: $cart-icon-border-radius;
+  background-color: $cart-icon-bg;
+  color: $cart-icon-text;
+
+  a i {
+    background-color: transparent;
+    color: $cart-icon-color;
+  }
+
+  &:hover {
+    background-color: lighten($cart-icon-bg, 2%);
+  }
+
+
+  .badge {
+    @include right(1px);
+
+    position: absolute;
+    bottom: 4px;
+    background-color: $cart-icon-badge;
+  }
+
+  .badge-warning {
+    @include right(33px);
+
+    padding: 2px 8px 2px 8px;
+    background-color: $cart-icon-badge-warning;
+    font-size: inherit;
+    font-weight: bold;
+  }
+}
+
+.cart-alert{
+  @include float(right);
+  @include right(76px);
+
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: $cart-icon-bg;
+  color: $cart-icon-text;
+  box-shadow: $dropdown-box-shadow;
+  z-index: $zindex-popover;
+
+  .cart-alert-text {
+    min-width: 225px;
+    max-width: 300px;
+    height: $navbar-height;
+    padding: $navbar-padding-y;
+  }
+
+  .cart-alert-checkout {
+    min-width: 225px;
+    max-width: 300px;
+    height:  $navbar-height;
+    padding-right: $navbar-padding-y;
+    padding-left: $navbar-padding-y;
+    white-space: nowrap;
+  }
+}
+
+.navbar-cart:hover{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  cursor: pointer;
+}

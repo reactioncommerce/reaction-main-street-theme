@@ -992,3 +992,27 @@ $product-description-font-size: 16px;
 $btn-light-bg: $gray-dark;
 $btn-light-color: $gray-dark;
 $btn-light-border-color: $gray-dark;
+
+
+// R130. Cart
+$cart-drawer-bg: #fff;
+$cart-drawer-height: 275px;
+$cart-icon-bg: #25b315;
+$cart-icon-badge:  #25b315;
+$cart-icon-badge-warning: #ff0000;
+$cart-icon-text: #fff;
+$cart-icon-color: #fff;
+$cart-icon-border-radius: 0;
+$cart-icon-border: none;
+$cart-icon-padding:  $navbar-padding-y 30px $navbar-padding-y 24px;
+
+$cart-progress-active: #57aed1;
+$cart-progress-visited: $brand-primary;
+$cart-progress-next:  #ececec;
+
+$checkout-progress-visited: $brand-primary;
+$checkout-progress-visited-text: #fff;
+$checkout-progress-active: $brand-primary;
+$checkout-progress-active-text: #fff;
+$checkout-progress-next: $brand-info;
+$checkout-progress-next-text: $gray-dark;
