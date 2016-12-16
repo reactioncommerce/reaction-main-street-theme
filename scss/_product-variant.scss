@@ -1,3 +1,4 @@
+// Top level variants
 
 .variant-detail {
   display: flex;
@@ -59,4 +60,142 @@
 
 .variant-deleted {
   opacity: 0.8;
+}
+
+.child-variant-table {
+  margin-bottom: 0px;
+}
+.remove-child-variant {
+  margin: 8px 0 0 0;
+}
+
+.variant-product-options {
+
+}
+
+.child-variant.image {
+  width: 100%;
+}
+
+.variant-product-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.variant-select-option {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 25%;
+  max-width: 25%;
+  padding: 10px;
+
+  @include media-breakpoint-down(xs) {
+    width: 33%;
+    max-width: 33%;
+  }
+}
+
+.page.show-settings .variant-select-option {
+  @include media-breakpoint-down(sm) {
+    width: 33%;
+    max-width: 33%;
+  }
+}
+
+.variant-select-option button {
+  padding: 0;
+}
+
+.variant-select-option img {
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: $btn-border-radius $btn-border-radius 0 0;
+}
+
+.variant-select-option .title {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+// Child variants (variant-options)
+
+.child-variant-table {
+  padding: 0;
+}
+
+.child-variant-table > thead > tr > th {
+  padding: 5px 5px;
+  border-right: 1px solid $list-group-border-color;
+}
+
+.child-variant-table > tbody > tr > td {
+  padding: 0;
+
+  border-right: 1px solid $list-group-border-color;
+
+  input {
+    padding: 2px 5px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.child-variant-table .column-price {
+  width: 15%;
+  min-width: 70px;
+}
+
+
+.child-variant-form .media {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+
+  img {
+    width: 100%;
+  }
+}
+
+.child-variant-form .panel-heading .media {
+  width: 50px;
+}
+
+.child-variant-form .panel-heading .media-item {
+  width: 100%;
+}
+
+.child-variant-form .media-item {
+  width: 25%;
+}
+
+.child-variant-form .form-group {
+  width: 100%;
+}
+
+.child-variant-form .js-dropzone {
+  margin-bottom: 20px;
+  border: 1px solid $list-group-border-color;
+  border-radius: $list-group-border-radius;
+}
+
+
+
+.child-variant-form .upload-form button {
+  flex: 1 1 auto;
+  border-top: 1px solid $btn-light-border-color;
+  border-radius: 0 0 $btn-border-radius $btn-border-radius;
+  background-color: $btn-light-bg;
+  text-align: center;
 }

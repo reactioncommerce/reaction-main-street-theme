@@ -823,7 +823,7 @@ $progress-bar-info-bg:        $brand-info !default;
 
 // 28. List group
 
-$list-group-bg:                 #fff !default;
+$list-group-:                 #fff !default;
 $list-group-border-color:       rgba(0,0,0,.125) !default;
 $list-group-border-width:       $border-width !default;
 $list-group-border-radius:      $border-radius !default;
@@ -987,3 +987,8 @@ $product-title-font-size: floor(($font-size-base * 3.6)); // ~36px
 $product-page-title-font-size: floor(($font-size-base * 2.35)); // ~30px
 $product-price-font-size: 42px;
 $product-description-font-size: 16px;
+
+// R120. Buttons
+$btn-light-bg: $gray-dark;
+$btn-light-color: $gray-dark;
+$btn-light-border-color: $gray-dark;
