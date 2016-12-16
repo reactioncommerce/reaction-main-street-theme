@@ -9,7 +9,8 @@
 @import "_fonts";
 
 // Styles
-@import "_address-book.scss";
+@import "_address-book";
+@import "_alerts";
 @import "_buttons";
 @import "_divider.scss";
 @import "_cards";
@@ -21,6 +22,7 @@
 @import "_media";
 @import "_navbar";
 @import "_product";
+@import "_product-grid";
 @import "_product-variant";
 @import "_toolbar";
 @import "_tooltip";

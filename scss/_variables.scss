@@ -978,6 +978,22 @@ $product-price-font-size: 42px;
 $product-description-font-size: 16px;
 
 
+// R111. Product Detail Grid
+
+$product-overlay-color:                   $gray-dark;
+$product-overlay-bg:                      $body-bg;
+$product-overlay-font-size:               $font-size-base;
+
+$product-grid-item-bg:                    #fff;
+$product-grid-item-border-width:          1px;
+$product-grid-item-border-color:          $gray-light;
+
+$product-grid-font-size-lg:               $font-size-lg;
+
+$grid-gutter-width: 10px; //inline forms will get messed up with larger values
+$drag-drop-zone-bg: #f0f8ff;
+
+
 // R120. Buttons
 
 $btn-light-bg: $gray-dark;
