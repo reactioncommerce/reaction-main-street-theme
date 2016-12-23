@@ -99,8 +99,8 @@ $gray-light:                #636c72;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
-$brand-primary:             #1c98d5;
-$brand-success:             #5fdd83;
+$brand-primary:             #5fdd83;
+$brand-success:             #1c98d5;
 $brand-info:                #c0c0c0;
 $brand-warning:             #ffd869;
 $brand-danger:              #e75153;
@@ -174,7 +174,7 @@ $inverse-color: $gray-lighter;
 //
 // Style anchor elements.
 
-$link-color:            $brand-primary;
+$link-color:            $brand-inverse;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
@@ -1014,7 +1014,7 @@ $btn-icon-size: 24px;
 
 $cart-drawer-bg: #fff;
 $cart-drawer-height: 275px;
-$cart-icon-bg: #25b315;
+$cart-icon-bg: $brand-primary;
 $cart-icon-badge:  #25b315;
 $cart-icon-badge-warning: #ff0000;
 $cart-icon-text: #fff;
