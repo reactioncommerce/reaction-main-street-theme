@@ -1,0 +1,62 @@
+// Dashboard package cards
+
+.dashboard-packages .rui.card-group .rui.item {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 25%;
+  min-width: 300px;
+  max-width: 25%;
+  padding: 10px;
+
+  @include media-breakpoint-up(lg) {
+    width: 33%;
+    max-width: 33%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 33%;
+    min-width: 250px;
+    max-width: 33%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 33%;
+    min-width: 0;
+    max-width: 33%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+.page.show-settings .dashboard-packages .rui.card-group .rui.item {
+  width: 33%;
+  max-width: 33%;
+
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    min-width: 250px;
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}

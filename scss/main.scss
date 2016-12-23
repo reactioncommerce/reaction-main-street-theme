@@ -1,7 +1,7 @@
 // Bootstrap base
 @import "_variables";
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 // Reaction Custom
 // All variables from bootstrap
@@ -12,8 +12,9 @@
 @import "_address-book";
 @import "_alerts";
 @import "_buttons";
-@import "_divider.scss";
-@import "_dropdowns.scss";
+@import "_dashboard";
+@import "_divider";
+@import "_dropdowns";
 @import "_cards";
 @import "_cart";
 @import "_drawer";
