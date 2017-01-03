@@ -1,0 +1,125 @@
+.panel-address-book {
+
+  // > .address-book {
+  //   .panel-heading {
+  //     .panel-default > .panel-heading;
+  //   }
+  // }
+
+  .list-group-item {
+    font-size: $small-font-size;
+    cursor: pointer;
+
+    a {
+      color: $body-color;
+      text-decoration: none;
+    }
+    a .active {color: $body-bg;}
+  }
+
+  .address-icons {
+    opacity:0.6;
+  }
+  .address-icons:hover {
+    cursor: pointer;
+    opacity:0.9;
+  }
+
+  .address-options {
+    @include padding-left(10px);
+
+    margin-top: -25px;
+    padding-bottom: 15px;
+    .form-group {
+      height: 15px;
+      font-size: $small-font-size;
+    }
+  }
+}
+
+
+.address-list .address-list-item {
+  margin-bottom: 20px;
+}
+
+.address-list-header {
+  display: flex;
+}
+
+.address-list-heading {
+  flex: 1 1 auto;
+}
+
+.address-list-heading-blank {
+  width: 44px;
+}
+
+.address-list-item {
+  display: flex;
+}
+
+.address-list-item .address {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 20px;
+  border: $list-group-border-width solid $list-group-border-color;
+  border-left: none;
+
+  &:first-child {
+    border-left: $list-group-border-width solid $list-group-border-color;
+  }
+
+  &:hover {
+    // color: contrast(@brand-light-highlight, @white, @black);
+    // background-color: @brand-light-highlight;
+    cursor: pointer;
+  }
+
+  &.active {
+    // color: contrast(@brand-light-highlight, @white, @black);
+    // background-color: @brand-light-highlight;
+
+    &:after {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      color: $brand-success;
+      font-family: "FontAwesome", "FontAwesomeFallback";
+      font-size: 3rem;
+      content: "\f058";
+    }
+  }
+}
+
+.address-list-item .controls {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: 44px;
+
+}
+
+.address-list-item .controls > .btn {
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  border-left: none;
+
+  border-width: $list-group-border-width $list-group-border-width $list-group-border-width 0;
+  border-radius: 0;
+  border-color: $list-group-border-color;
+
+  &:first-child {
+    border-radius: 0 $list-group-border-radius 0 0;
+  }
+
+  &:last-child {
+    border-width: 0 1px 1px 0;
+    border-radius: 0 0 $list-group-border-radius 0;
+  }
+
+  &.danger-action {
+    max-height: 44px;
+  }
+}
