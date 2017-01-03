@@ -1,0 +1,96 @@
+
+.checkout-progress {
+  background-color: $checkout-progress-bg;
+}
+
+.checkout-progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 0 20px 0;
+  list-style-type: none;
+}
+
+.checkout-progress-bar li {
+  display: flex;
+  position: relative;
+  flex: 1 1 auto;
+  align-items: center;
+  height: 50px;
+
+  &:first-child:before, &:last-child:after {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    background-color: $checkout-progress-next-bg;
+    content: "";
+  }
+
+  &:first-child:before {
+    border-radius: 3px 0 0 3px;
+  }
+
+  &:last-child:after {
+    border-radius: 0 3px 3px 0;
+  }
+
+  &:after {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    background-color: $checkout-progress-next-bg;
+    content: "";
+  }
+
+  &:before {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    background-color: $checkout-progress-next-bg;
+    content: "";
+  }
+
+  // The different states of progress
+  &.visited:before,
+  &.visited:after,
+  &.visited .progress-step-badge {
+    background-color: $checkout-progress-visited;
+    color: $checkout-progress-visited-text;
+  }
+
+  &.active:before,
+  // &.active:after,
+  &.active .progress-step-badge {
+    background-color: $cart-progress-visited;
+    color: $checkout-progress-visited-text;
+  }
+
+}
+
+.progress-step-badge {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: $checkout-progress-next-bg;
+
+  color: $checkout-progress-step-color;
+
+  @include media-breakpoint-down(xs) {
+    width: 34px;
+    height: 34px;
+    font-size: .8rem;
+  }
+}
+
+.progress-step-label {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}

@@ -823,7 +823,7 @@ $progress-bar-info-bg:        $brand-info !default;
 
 // 28. List group
 
-$list-group-:                 #fff !default;
+$list-group-bg:                 #fff !default;
 $list-group-border-color:       rgba(0,0,0,.125) !default;
 $list-group-border-width:       $border-width !default;
 $list-group-border-radius:      $border-radius !default;
@@ -1029,12 +1029,15 @@ $cart-progress-active: #57aed1 !default;
 $cart-progress-visited: $brand-primary !default;
 $cart-progress-next:  #ececec !default;
 
-$checkout-progress-visited: $brand-primary !default;
-$checkout-progress-visited-text: #fff !default;
-$checkout-progress-active: $brand-primary !default;
-$checkout-progress-active-text: #fff !default;
-$checkout-progress-next: $brand-info !default;
-$checkout-progress-next-text: $gray-dark !default;
+$checkout-progress-bg:                        #fff !default;
+$checkout-progress-step-color:                #fff !default;
+$checkout-progress-visited:                   $brand-primary !default;
+$checkout-progress-visited-text:              #fff !default;
+$checkout-progress-active:                    $brand-primary !default;
+$checkout-progress-active-text:               #fff !default;
+$checkout-progress-next:                      $brand-info !default;
+$checkout-progress-next-bg:                   $brand-info !default;
+$checkout-progress-next-text:                 $gray-dark !default;
 
 
 // R190. Badge
