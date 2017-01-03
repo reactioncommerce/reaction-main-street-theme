@@ -1,0 +1,42 @@
+@import "_fonts";
+
+$namespace: "rui-admin" !default;
+
+// Bootstrap base
+@import "_variables";
+
+.#{$namespace} {
+  @import "../node_modules/bootstrap/scss/bootstrap";
+}
+
+// Reaction Custom
+// All variables from bootstrap
+@import "mixins/_rtl";
+// @import "_fonts";
+
+// Styles
+@import "_address-book";
+@import "_alerts";
+@import "_buttons";
+@import "_dashboard";
+@import "_divider";
+@import "_dropdowns";
+@import "_cards";
+@import "_cart";
+@import "_drawer";
+@import "_checkout";
+@import "_layout";
+@import "_lists";
+@import "_media";
+@import "_navbar";
+@import "_popovers";
+@import "_product";
+@import "_product-grid";
+@import "_product-variant";
+@import "_progress";
+@import "_toolbar";
+@import "_tooltip";
+@import "_tags";
+@import "_tagnav";
+
+@import "bootstrap.rtl";

@@ -14,7 +14,7 @@
   z-index: $zindex-popover;
 }
 
-.rui.popover-content {
+.#{$namespace}.popover-content {
   padding: 0;
 }
 

@@ -1,20 +1,20 @@
 
-.rui.separator.labeled {
+.#{$namespace}.separator.labeled {
   display: flex;
   align-items: center;
 }
 
-.rui.separator.labeled hr {
+.#{$namespace}.separator.labeled hr {
   flex: 1 1 auto;
 }
 
-.rui.separator.labeled .label {
+.#{$namespace}.separator.labeled .label {
   flex: 0 0 auto;
   font-size: $font-size-sm;
   text-transform: uppercase;
 }
 
-.rui.separator.padding.xs {
+.#{$namespace}.separator.padding.xs {
   padding-right: $spacer;
   padding-left: $spacer;
 }

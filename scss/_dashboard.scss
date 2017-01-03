@@ -1,6 +1,6 @@
 // Dashboard package cards
 
-.dashboard-packages .rui.card-group .rui.item {
+.dashboard-packages .#{$namespace}.card-group .#{$namespace}.item {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -33,7 +33,7 @@
   }
 }
 
-.page.show-settings .dashboard-packages .rui.card-group .rui.item {
+.page.show-settings .dashboard-packages .#{$namespace}.card-group .#{$namespace}.item {
   width: 33%;
   max-width: 33%;
 

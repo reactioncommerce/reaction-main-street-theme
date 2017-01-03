@@ -1,10 +1,10 @@
 
-.rui.tags {
+.#{$namespace}.tags {
   display: flex;
   flex-wrap: wrap;
 }
 
-.rui.tag {
+.#{$namespace}.tag {
   display: flex;
   margin: 5px;
   padding: $input-padding-y $input-padding-x;
@@ -12,27 +12,27 @@
   background-color: $gray-light;
 }
 
-.rui.tag.full-width {
+.#{$namespace}.tag.full-width {
   width: 100%;
 }
 
-.rui.tag.edit {
+.#{$namespace}.tag.edit {
   height: 33px;
   padding: 0;
 }
 
-.rui.tag.edit .autosuggest-wrapper,
-.rui.tag.edit .react-autosuggest__container {
+.#{$namespace}.tag.edit .autosuggest-wrapper,
+.#{$namespace}.tag.edit .react-autosuggest__container {
   width: 100%;
   height: 100%;
 }
 
-.rui.tag.edit form {
+.#{$namespace}.tag.edit form {
   display: flex;
   width: 100%;
 }
 
-.rui.tag.edit input {
+.#{$namespace}.tag.edit input {
   width: 100%;
   height: 100%;
   padding: $input-padding-y $input-padding-x;
@@ -42,7 +42,7 @@
   background-color: $input-bg;
 }
 
-.rui.tag.edit .btn {
+.#{$namespace}.tag.edit .btn {
   border: $input-btn-border-width solid $input-border-color;
   border-left: none;
   border-radius: 0;
@@ -50,29 +50,29 @@
   color: $input-color;
 }
 
-.rui.tag.edit .btn:first-child {
+.#{$namespace}.tag.edit .btn:first-child {
   border-left: $input-btn-border-width solid $input-border-color;
   border-radius: $input-border-radius 0 0 $input-border-radius;
 }
 
-html.rtl .rui.tag.edit .btn:first-child {
+html.rtl .#{$namespace}.tag.edit .btn:first-child {
   border-right: $input-btn-border-width solid $input-border-color;
   border-left: none;
   border-radius: 0 $input-border-radius $input-border-radius 0;
 }
 
-.rui.tag.edit .btn:last-child {
+.#{$namespace}.tag.edit .btn:last-child {
   border-right: $input-btn-border-width solid $input-border-color;
   border-radius: 0 $input-border-radius $input-border-radius 0;
 }
 
-html.rtl .rui.tag.edit .btn:last-child {
+html.rtl .#{$namespace}.tag.edit .btn:last-child {
   border-left: $input-btn-border-width solid $input-border-color;
   border-radius: $input-border-radius 0 0 $input-border-radius;
 }
 
 
-.rui.tag.edit.create {
+.#{$namespace}.tag.edit.create {
   button {
     color: $btn-success-bg;
   }

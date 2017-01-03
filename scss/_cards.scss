@@ -212,12 +212,12 @@ label.panel-title {
 
 // --------------------------------
 // Cards
-.rui.card-grid {
+.#{$namespace}.card-grid {
   display: flex;
   flex-wrap: wrap;
 }
 
-.rui.card-grid > .rui.card {
+.#{$namespace}.card-grid > .#{$namespace}.card {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -250,7 +250,7 @@ label.panel-title {
   }
 }
 
-.page.show-settings .rui.card-grid > .rui.card {
+.page.show-settings .#{$namespace}.card-grid > .#{$namespace}.card {
   width: 33%;
   max-width: 33%;
 
@@ -278,27 +278,27 @@ label.panel-title {
   }
 }
 
-.rui.card {
+.#{$namespace}.card {
   display: flex;
   flex: 1 1 auto;
 }
 
-.rui.card.active {
+.#{$namespace}.card.active {
   border: 1px solid $brand-primary;
   box-shadow: 0 0 0 3px $brand-primary;
 }
 
-.rui.card .content {
+.#{$namespace}.card .content {
   flex: 1 1 auto;
   padding: 10px;
   cursor: default;
 }
 
-.rui.card .content .title {
+.#{$namespace}.card .content .title {
   margin-top: 0;
 }
 
-.rui.card .controls {
+.#{$namespace}.card .controls {
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -308,7 +308,7 @@ label.panel-title {
   border-left: $card-border-width solid $card-border-color;
 }
 
-.rui.card .controls button {
+.#{$namespace}.card .controls button {
   display: flex;
   flex: 1 1 auto;
   align-items: center;
@@ -332,13 +332,13 @@ label.panel-title {
 }
 
 // Groups of cards
-.rui.card-group {
+.#{$namespace}.card-group {
   width: 100%;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-.rui.card-group .header {
+.#{$namespace}.card-group .header {
   display: flex;
   flex: 1 1 auto;
   align-items: center;
@@ -350,12 +350,12 @@ label.panel-title {
   font-size: 2rem;
 }
 
-.rui.card-group > .content {
+.#{$namespace}.card-group > .content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.rui.card-group .content > .rui.item {
+.#{$namespace}.card-group .content > .#{$namespace}.item {
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;

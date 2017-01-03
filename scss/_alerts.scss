@@ -21,32 +21,32 @@
   }
 }
 
-.rui.alert {
+.#{$namespace}.alert {
   display: flex;
   padding: 0;
   border-radius: 0;
 }
 
-.rui.alert > .content {
+.#{$namespace}.alert > .content {
   @include padding-right(10px);
 
   flex: 1 1 auto;
   padding: 20px;
 }
 
-.rui.alert > .controls {
+.#{$namespace}.alert > .controls {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.rui.alert > .controls .control {
+.#{$namespace}.alert > .controls .control {
   flex: 0 0 auto;
   width: 44px;
   min-height: 44px;
 }
 
-.rui.alert .s-alert-close {
+.#{$namespace}.alert .s-alert-close {
   display: flex;
   position: static;
   align-items: center;

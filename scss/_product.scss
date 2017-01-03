@@ -103,7 +103,7 @@
   }
 }
 
-.pdp .rui.social-buttons {
+.pdp .#{$namespace}.social-buttons {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
@@ -181,11 +181,11 @@
 }
 
 // Tags
-.pdp-container .rui.tag.edit {
+.pdp-container .#{$namespace}.tag.edit {
   width: 100%;
 }
 
-.pdp-container .rui.tags > .rui.item {
+.pdp-container .#{$namespace}.tags > .#{$namespace}.item {
   width: 50%;
 
   @include media-breakpoint-down(md) {
@@ -193,11 +193,11 @@
   }
 }
 
-.pdp-container .rui.tags > .rui.item .fa-bookmark {
+.pdp-container .#{$namespace}.tags > .#{$namespace}.item .fa-bookmark {
   color: $btn-success-bg;
 }
 
-.pdp-container .rui.tags > .rui.item input {
+.pdp-container .#{$namespace}.tags > .#{$namespace}.item input {
   width: 100%;
 }
 

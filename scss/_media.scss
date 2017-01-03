@@ -1,5 +1,5 @@
 /* media gellery */
-.rui.media-gallery {
+.#{$namespace}.media-gallery {
   position: relative;
   max-width: 100%;
   min-height: 150px;
@@ -20,21 +20,21 @@
   padding: 2px;
 }
 
-.rui.media-gallery {
+.#{$namespace}.media-gallery {
   width: 100%;
   padding: 0;
   list-style: none;
 }
 
-.rui.media-gallery .rui.badge-container {
+.#{$namespace}.media-gallery .#{$namespace}.badge-container {
   position: absolute;
   top: $badge-offset;
   right: $badge-offset;
   z-index: 1;
 }
 
-.rui.media-gallery .draggable-media:first-child,
-.rui.media-gallery .gallery-image:first-child {
+.#{$namespace}.media-gallery .draggable-media:first-child,
+.#{$namespace}.media-gallery .gallery-image:first-child {
   display: block;
   top: 0;
   left: 0;
@@ -45,13 +45,13 @@
   cursor: auto;
 }
 
-.rui.media-gallery .draggable-media {
+.#{$namespace}.media-gallery .draggable-media {
   display: inline-block;
   width: 24%;
   height: 24%;
 }
 
-.rui.media-gallery .gallery-image {
+.#{$namespace}.media-gallery .gallery-image {
   display: inline-block;
   position: relative;
   top: 0;
@@ -63,11 +63,11 @@
   background-color: $list-group-hover-bg;
 }
 
-.rui.media-gallery .gallery-image .img-responsive {
+.#{$namespace}.media-gallery .gallery-image .img-responsive {
   width: 100%;
 }
 
-.rui.media-gallery .gallery-image.gallery-tools {
+.#{$namespace}.media-gallery .gallery-image.gallery-tools {
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -75,7 +75,7 @@
   visibility: hidden;
 }
 
-.rui.media-gallery .gallery-image.progress {
+.#{$namespace}.media-gallery .gallery-image.progress {
   display: block;
   position: relative;
   top: -10px;
@@ -85,29 +85,29 @@
   margin-left: 10px;
 }
 
-.rui.media-gallery .gallery-image:hover {
+.#{$namespace}.media-gallery .gallery-image:hover {
   background-color: $list-group-hover-bg;
   cursor: pointer;
   opacity: 0.7;
 }
-.rui.media-gallery .gallery-image:hover .gallery-tools {
+.#{$namespace}.media-gallery .gallery-image:hover .gallery-tools {
   opacity: 1;
   visibility: visible;
 }
 
-.rui.media-gallery .gallery-image:hover .gallery-tools a {
+.#{$namespace}.media-gallery .gallery-image:hover .gallery-tools a {
   color: $gray-dark;
 }
 
-.rui.media-gallery .gallery-image .video {
+.#{$namespace}.media-gallery .gallery-image .video {
   width: 100%;
 }
 
-.rui.media-gallery .gallery-image.add {
+.#{$namespace}.media-gallery .gallery-image.add {
   position: relative;
 }
 
-.rui.media-gallery .gallery-image.add .badge-container {
+.#{$namespace}.media-gallery .gallery-image.add .badge-container {
   display: flex;
   position: absolute;
   top: 0;
@@ -120,6 +120,6 @@
   padding: 2px;
 }
 
-.rui.media img {
+.#{$namespace}.media img {
   width: 100%;
 }

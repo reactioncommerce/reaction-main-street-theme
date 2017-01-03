@@ -1,10 +1,10 @@
 
-.rui.tagnav .rui.tags {
+.#{$namespace}.tagnav .#{$namespace}.tags {
   display: flex;
   flex-wrap: wrap;
 }
 
-.rui.tagnav .rui.tag {
+.#{$namespace}.tagnav .#{$namespace}.tag {
   display: flex;
   width: 100%;
   margin: 0;
@@ -13,37 +13,37 @@
   background-color: transparent;
 }
 
-.rui.tagnav .rui.tag.edit {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit {
   padding: ($navbar-padding-y / 2) 0;
 }
 
-.rui.tagnav .rui.tag.edit button:last-child {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit button:last-child {
   min-width: 36px;
 }
 
-.rui.tagnav .rui.tag.edit form {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit form {
   display: flex;
 }
 
-.rui.tagnav .rui.tag.edit input {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit input {
   width: 100%;
   padding: 0 5px;
 }
 
-.rui.tagnav .rui.tag.edit button {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit button {
   padding: 2px 5px;
 }
 
-.rui.tagnav .rui.tag.edit button:first-child {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit button:first-child {
   border-radius: $border-radius 0 0 $border-radius;
 }
 
-.rui.tagnav .rui.tag.edit button:last-child {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit button:last-child {
   border-radius: 0 $border-radius $border-radius 0;
 }
 
 // TODO: Revisit
-// .rui.tagnav .rui.tag.edit.create {
+// .#{$namespace}.tagnav .#{$namespace}.tag.edit.create {
 //   @color: lighten(@btn-success-bg, 10%);
 //   @color: @brand-secondary-color;
 //   // @color: #238CC3;
@@ -61,13 +61,13 @@
 //   }
 // }
 
-.rui.tagnav .rui.tag.edit.create input {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit.create input {
   // .placeholder($brand-secondary-color);
 }
 
 // Base Tag Navigation
 // -- Horizontal Layout
-.rui.tagnav {
+.#{$namespace}.tagnav {
   display: flex;
   position: relative;
   flex: 1 1 auto;
@@ -78,12 +78,12 @@
 }
 
 // -- Vertical Layout
-.rui.tagnav.vertical {
+.#{$namespace}.tagnav.vertical {
   display: flex;
   flex-direction: column;
 }
 
-.rui.tagnav.fixed {
+.#{$namespace}.tagnav.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -94,17 +94,17 @@
   z-index: $zindex-navbar;
 }
 
-.rui.tagnav.fixed.open {
+.#{$namespace}.tagnav.fixed.open {
   display: flex;
 }
 
-.rui.tagnav.fixed.closed {
+.#{$namespace}.tagnav.fixed.closed {
   display: none;
 }
 
 // Tag navigation tag list
 // -- Horizontal Layout
-.rui.tagnav > .rui.tags {
+.#{$namespace}.tagnav > .#{$namespace}.tags {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -115,13 +115,13 @@
 }
 
 // -- Vertical Layout
-.rui.tagnav.vertical > .rui.tags {
+.#{$namespace}.tagnav.vertical > .#{$namespace}.tags {
   display: block;
 }
 
 // Tag navigation, edit tags button
 // -- Horizontal Layout
-.rui.tagnav .edit-tag-button {
+.#{$namespace}.tagnav .edit-tag-button {
   flex: 0 0 auto;
   height: 100%;
   border: 0;
@@ -131,11 +131,11 @@
 }
 
 // -- Vertical Layout
-.rui.tagnav.vertical .edit-tag-button {
+.#{$namespace}.tagnav.vertical .edit-tag-button {
   height: auto;
 }
 
-.rui.tagnav .navbar-header {
+.#{$namespace}.tagnav .navbar-header {
   display: none;
 
   @media screen and (max-width: map-get($container-max-widths, sm)) {
@@ -143,14 +143,14 @@
   }
 }
 
-.rui.tagnav.vertical .navbar-header {
+.#{$namespace}.tagnav.vertical .navbar-header {
   flex: 0 0 auto;
   width: 100%;
   // height: $navbar-height;
   border-bottom: 1px solid $list-group-border-color;
 }
 
-.rui.tagnav.vertical .navbar-header .close-button {
+.#{$namespace}.tagnav.vertical .navbar-header .close-button {
   width: 44px;
   border: none;
   border-radius: 0;
@@ -158,7 +158,7 @@
 
 // Groupd navbar items (includes a link and dropdown)
 // -- Horizontal
-.rui.tagnav .navbar-items {
+.#{$namespace}.tagnav .navbar-items {
   display: flex;
   flex: 1 1 auto;
   height: 100%;
@@ -166,7 +166,7 @@
 }
 
 // -- Vertical
-.rui.tagnav.vertical .navbar-items {
+.#{$namespace}.tagnav.vertical .navbar-items {
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -175,22 +175,22 @@
 
 // Single navbar item
 // -- Horizontal Layout
-.rui.tagnav .navbar-items > .navbar-item {
+.#{$namespace}.tagnav .navbar-items > .navbar-item {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
 }
 
 // -- Vertical Layout
-.rui.tagnav.vertical .navbar-items > .navbar-item {
+.#{$namespace}.tagnav.vertical .navbar-items > .navbar-item {
   display: block;
 }
 
-.rui.tagnav .navbar-footer {
+.#{$namespace}.tagnav .navbar-footer {
   height: 100%;
 }
 
-.rui.tagnav.vertical .navbar-footer {
+.#{$namespace}.tagnav.vertical .navbar-footer {
   display: flex;
   flex: 0 0 auto;
   width: 100%;
@@ -198,7 +198,7 @@
   border-top: $dropdown-border-width solid $dropdown-border-color;
 }
 
-.rui.tagnav .edit-tag-button.btn-success {
+.#{$namespace}.tagnav .edit-tag-button.btn-success {
   flex: 0 0 auto;
   height: 100%;
   border: 0;
@@ -208,11 +208,11 @@
   color: $btn-success-color;
 }
 
-.rui.tagnav.vertical .navbar-item.has-dropdown > .rui.tag.link {
+.#{$namespace}.tagnav.vertical .navbar-item.has-dropdown > .#{$namespace}.tag.link {
   position: relative;
 }
 
-.rui.tagnav.vertical .navbar-item.has-dropdown > .rui.tag.link:after {
+.#{$namespace}.tagnav.vertical .navbar-item.has-dropdown > .#{$namespace}.tag.link:after {
   display: flex;
   position: absolute;
   top: 0;
@@ -224,7 +224,7 @@
   content: $icon-angle-down;
 }
 
-.rui.tagnav .navbar-item > .rui.tag.link {
+.#{$namespace}.tagnav .navbar-item > .#{$namespace}.tag.link {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
@@ -235,18 +235,18 @@
   text-transform: uppercase;
 }
 
-.rui.tagnav .navbar-item:hover > .rui.tag.link {
+.#{$namespace}.tagnav .navbar-item:hover > .#{$namespace}.tag.link {
   // background-color: @black10;
   color: $link-color;
 }
 
-.rui.tagnav.vertical .navbar-item > .rui.tag.link {
+.#{$namespace}.tagnav.vertical .navbar-item > .#{$namespace}.tag.link {
   display: block;
   height: auto;
   padding: 10px 20px;
 }
 
-.rui.tagnav .navbar-item > .rui.item.edit {
+.#{$namespace}.tagnav .navbar-item > .#{$namespace}.item.edit {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
@@ -257,58 +257,58 @@
   padding: 0 5px;
 }
 
-.rui.tagnav .navbar-item > .rui.tag.edit form {
+.#{$namespace}.tagnav .navbar-item > .#{$namespace}.tag.edit form {
   height: 26px;
 }
 
-.rui.tagnav.vertical .navbar-item > .rui.item.edit {
+.#{$namespace}.tagnav.vertical .navbar-item > .#{$namespace}.item.edit {
   width: 100%;
   max-width: 100%;
   padding: 10px 20px;
 }
 
-.rui.tagnav .rui.tag.edit.selected button,
-.rui.tagnav .rui.tag.edit.selected input {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit.selected button,
+.#{$namespace}.tagnav .#{$namespace}.tag.edit.selected input {
   border-color: $btn-info-border;
   background-color: $btn-info-bg;
   color: $btn-info-color;
 }
 
-.rui.tagnav .rui.tag.edit.selected button:last-child {
+.#{$namespace}.tagnav .#{$namespace}.tag.edit.selected button:last-child {
   color: $btn-success-color;
 }
 
-.rui.tagnav .navbar-item {
+.#{$namespace}.tagnav .navbar-item {
   height: 100%;
 }
 
-.rui.tagnav.vertical .navbar-item {
+.#{$namespace}.tagnav.vertical .navbar-item {
   height: auto;
 }
 
-.rui.tagnav .navbar-item .dropdown-container {
+.#{$namespace}.tagnav .navbar-item .dropdown-container {
   display: none;
   // color: $text-color;
   box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
 
-.rui.tagnav .navbar-item .dropdown-container a {
+.#{$namespace}.tagnav .navbar-item .dropdown-container a {
   color: $link-color;
 }
 //
-// .rui.tagnav .navbar-item .dropdown-container .rui.tag,
-// .rui.tagnav .rui.tag.edit input {
+// .#{$namespace}.tagnav .navbar-item .dropdown-container .#{$namespace}.tag,
+// .#{$namespace}.tagnav .#{$namespace}.tag.edit input {
 //   color: @text-color;
 // }
 //
-.rui.tagnav .navbar-item.selected > .rui.tag {
+.#{$namespace}.tagnav .navbar-item.selected > .#{$namespace}.tag {
   border-radius: 0;
   background-color: $gray-light;
 }
 
-.rui.tagnav .navbar .navbar-item:hover .dropdown-container,
-.rui.tagnav .navbar .navbar-item:focus .dropdown-container,
-.rui.tagnav .navbar-item.selected .dropdown-container {
+.#{$namespace}.tagnav .navbar .navbar-item:hover .dropdown-container,
+.#{$namespace}.tagnav .navbar .navbar-item:focus .dropdown-container,
+.#{$namespace}.tagnav .navbar-item.selected .dropdown-container {
   display: block;
   position: absolute;
   top: $navbar-height;
@@ -320,8 +320,8 @@
   z-index: $zindex-navbar;
 }
 
-.rui.tagnav.vertical .navbar-item.selected .dropdown-container,
-.rui.tagnav.vertical .navbar-item .dropdown-container {
+.#{$namespace}.tagnav.vertical .navbar-item.selected .dropdown-container,
+.#{$namespace}.tagnav.vertical .navbar-item .dropdown-container {
   position: static;
 }
 
