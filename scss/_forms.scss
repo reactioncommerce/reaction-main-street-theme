@@ -1,0 +1,33 @@
+
+// Text field
+.#{$namespace}.textfield {}
+
+.#{$namespace}.textfield input {
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  border: $input-btn-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+}
+
+.#{$namespace}.textfield.center input {
+  text-align: center;
+}
+
+.#{$namespace}.textfield.left input {
+  text-align: left;
+}
+
+.#{$namespace}.textfield.right input {
+  text-align: right;
+}
+
+.#{$namespace}.textfield.justify input {
+  text-align: justify;
+}
+
+.#{$namespace}.textfield textarea {
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  border: $input-btn-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+}
