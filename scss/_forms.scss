@@ -1,5 +1,65 @@
+// Form elements
 
-// Text field
+// Checbox switch style
+
+.checkbox-switch {
+  position: relative;
+  width: 36px;
+  height: 22px;
+  padding: 10px;
+  cursor: hand;
+
+  input, label {
+    display: none;
+  }
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    transition: all 200ms;
+    border-radius: 12px;
+    background-color: darken(#fff, 10%);
+    content: "";
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    transition: all 200ms;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    content: "";
+  }
+
+  &:avtive:after {
+    background-color: darken(#fff, 10%);
+  }
+
+  &:checked:before {
+    transition: all 200ms;
+    background-color: $brand-success;
+  }
+
+  &:checked:after {
+    left: 16px;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}
+
+// Textfield and textarea
+
 .#{$namespace}.textfield {}
 
 .#{$namespace}.textfield input {
