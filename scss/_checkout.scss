@@ -1,3 +1,135 @@
+.checkout {
+  display: flex
+}
+
+.checkout-progress {}
+.checkout-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+  }
+}
+
+.checkout-steps .panel-default > .panel-heading,
+.checkout-steps .panel-default .panel-heading {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-steps-main {
+  flex: 1 1 auto;
+  max-width: 100%;
+  margin-right: 3rem;
+
+  @include media-breakpoint-down(xs) {
+    @include margin-right(0);
+  }
+}
+.checkout-steps-side {
+  flex: 1 0 auto;
+  min-width: 300px;
+  max-width: 30%;
+
+  @include media-breakpoint-down(xs) {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.cart-checkout-steps {
+  @include padding-left(5px);
+  margin-top: 20px;
+
+  .panel-title {
+    @include margin-left(25px);
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .cart-checkout-steps {
+    .col-md-8 {
+      @include padding-right(15px);
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .cart-checkout-steps {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.checkout-step-pending {
+  position: relative;
+
+  > .panel-default {
+    height: 300px;
+    margin-bottom: 3rem;
+    background-color: $card-bg;
+  }
+
+  > .panel-default .panel-heading,
+  .panel-body {
+    background-color: $card-bg;
+    border: none;
+  }
+}
+
+.checkout-step {
+  position: relative;
+  > .panel-default {
+    margin-bottom: 3rem;
+  }
+}
+
+.checkout-step-badge {
+  @include margin-right(20px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  background: $checkout-progress-next-bg;
+  color: $checkout-progress-next-color;
+  font-size: 16px;
+  font-weight: bold;
+}
+.checkout-step-badge.completed {
+  background: $checkout-progress-visited-bg;
+  color: $checkout-progress-visited-color;
+}
+.checkout-step-badge.active {
+  background: $checkout-progress-active-bg;
+  color: $checkout-progress-active-color;
+}
+
+// patch for payment autoform's mysteriously
+// not getting the form-control class
+.core-payment-method-form {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.core-payment-method-form label {
+  font-weight: lighter;
+}
+
+.core-payment-method-form input {
+  // .form-control;
+}
+
+.core-payment-method-form select {
+  // .form-control;
+}
+
+
 
 .checkout-progress {
   background-color: $checkout-progress-bg;
@@ -55,15 +187,15 @@
   &.visited:before,
   &.visited:after,
   &.visited .progress-step-badge {
-    background-color: $checkout-progress-visited;
-    color: $checkout-progress-visited-text;
+    background-color: $checkout-progress-visited-bg;
+    color: $checkout-progress-visited-color;
   }
 
   &.active:before,
   // &.active:after,
   &.active .progress-step-badge {
-    background-color: $cart-progress-visited;
-    color: $checkout-progress-visited-text;
+    background-color: $checkout-progress-visited-bg;
+    color: $checkout-progress-visited-color;
   }
 
 }
