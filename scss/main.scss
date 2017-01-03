@@ -6,7 +6,7 @@
 // Reaction Custom
 // All variables from bootstrap
 @import "mixins/_rtl";
-@import "_fonts";
+@import "fonts";
 
 // Styles
 @import "_address-book";
@@ -34,5 +34,6 @@
 @import "_tooltip";
 @import "_tags";
 @import "_tagnav";
+@import "_util";
 
-@import "bootstrap.rtl";
+@import "_bootstrap.rtl";

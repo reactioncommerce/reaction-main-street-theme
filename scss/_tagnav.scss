@@ -73,7 +73,7 @@
   flex: 1 1 auto;
   align-items: center;
   height: $navbar-height;
-  // background-color: @navbar-inverse-bg;
+  background-color: $navbar-bg;
   text-transform: uppercase;
 }
 
@@ -316,7 +316,7 @@
   width: 100%;
   margin: 0;
   border-bottom: $dropdown-border-width solid $dropdown-border-color;
-  // background-color: @white;
+  background-color: $navbar-bg;
   z-index: $zindex-navbar;
 }
 
@@ -342,4 +342,101 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+// Tag Group
+
+
+.#{$namespace}.grouptag {
+  flex: 1 1 auto;
+  max-width: 20%;
+  padding: 10px;
+}
+
+.#{$namespace}.tagnav.vertical .#{$namespace}.grouptag {
+  margin-bottom: 40px;
+  max-width: 100%;
+  padding: 0;
+}
+
+.#{$namespace}.grouptag > .item {
+  flex: 1 1 auto;
+  min-width: 200px;
+  width: 15%;
+  max-width: 15%;
+  padding: 10px;
+}
+
+.#{$namespace}.grouptag > .header {
+  border-bottom: 1px solid $dropdown-border-color;
+}
+
+.#{$namespace}.tagnav.vertical .#{$namespace}.grouptag > .header {
+  padding: 0 20px;
+}
+
+.#{$namespace}.grouptag > .header .#{$namespace}.tag {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.#{$namespace}.tagnav.vertical .#{$namespace}.grouptag > .header .#{$namespace}.tag {
+  // padding: 0 20px;
+}
+
+
+.#{$namespace}.grouptag > .content {}
+
+.#{$namespace}.tagnav.vertical .#{$namespace}.grouptag > .content {
+  padding: 0 20px;
+}
+
+.#{$namespace}.grouptag > .footer {}
+
+.#{$namespace}.grouptag > .header .#{$namespace}.tag.edit,
+.#{$namespace}.grouptag > .header .#{$namespace}.tag.edit.create {
+  text-transform: none;
+
+  input {
+    background-color: $input-bg;
+    border-color: $btn-success-border;
+    color: $input-color;
+  }
+
+  button {
+    background-color: $btn-success-bg;
+    border-color: $btn-success-bg;
+    color: $btn-success-color;
+  }
+}
+
+.#{$namespace}.grouptag > .header .#{$namespace}.tag.edit input::placeholder,
+.#{$namespace}.grouptag > .header .#{$namespace}.tag.edit.create input::placeholder {
+  color: $input-color;
+}
+
+.#{$namespace}.grouptag > .content .#{$namespace}.tag.link {
+  text-transform: none;
+}
+
+.#{$namespace}.tagnav.vertical .#{$namespace}.grouptag > .content .#{$namespace}.tag.link {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 3px 0;
+}
+
+
+.empty-tag-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: @black10;
+  height: 120px;
+  max-width: 300px;
+}
+
+.#{$namespace}.tagnav.vertical .empty-tag-group {
+  display: block;
 }

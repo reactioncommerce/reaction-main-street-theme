@@ -1,9 +1,10 @@
-@import "_fonts";
+// Admin styles
 
 $namespace: "rui-admin" !default;
 
 // Bootstrap base
 @import "_variables";
+@import "_fonts";
 
 .#{$namespace} {
   @import "../node_modules/bootstrap/scss/bootstrap";
@@ -40,5 +41,6 @@ $namespace: "rui-admin" !default;
 @import "_tooltip";
 @import "_tags";
 @import "_tagnav";
+@import "_util";
 
-@import "bootstrap.rtl";
+@import "_bootstrap.rtl";
